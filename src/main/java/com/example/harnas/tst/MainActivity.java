@@ -57,9 +57,7 @@ public class MainActivity extends AppCompatActivity {
         start = findViewById(R.id.ButtonStart);
 
         for (i = 0; i <= 19; i++) {
-
             Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
-
         }
 
 
@@ -317,9 +315,14 @@ public class MainActivity extends AppCompatActivity {
     public void game(int piknumber) {
 
 
-        Ib[piknumber].setBackgroundResource(R.drawable.konik);
+
         if (pic[piknumber] == 1) {
             if (flagb1 == 0) {
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
+                Ib[piknumber].setBackgroundResource(R.drawable.konik);
+
                 flagpic =piknumber;
 
                 flagb1 = 1;
@@ -335,12 +338,14 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
 
-                    try {
-                        Ib[piknumber].setBackgroundResource(R.drawable.konik);
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                   // Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                   // Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+
+                    Ib[piknumber].setBackgroundResource(R.drawable.konik);
+                    Ib[piknumber].refreshDrawableState();
+                //        try{
+                //        Thread.sleep(1000);
+                //    } catch (InterruptedException e){ }
+                //    Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                //    Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
 
@@ -351,12 +356,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (pic[piknumber] == 2) {
-            Ib[piknumber].setBackgroundResource(R.drawable.kotek);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.kotek);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -368,13 +375,16 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
 
-                    try {
-                        Ib[piknumber].setBackgroundResource(R.drawable.kotek);
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                   // Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                   // Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+
+                    Ib[piknumber].setBackgroundResource(R.drawable.kotek);
+                    Ib[piknumber].refreshDrawableState();
+                  //  try{
+                  //         Thread.sleep(1000);
+                  //     } catch (InterruptedException e){ }
+                  //   Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                  //   Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
+
                 }
 
 
@@ -383,12 +393,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (pic[piknumber] == 3) {
-            Ib[piknumber].setBackgroundResource(R.drawable.krolik);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.krolik);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -400,13 +412,15 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.krolik);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                  //  try {
+                  //      Thread.sleep(1000);
+                  //  } catch (InterruptedException e){ }
+                  //  Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                  //  Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
+
 
 
             }
@@ -414,12 +428,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (pic[piknumber] == 4) {
-            Ib[piknumber].setBackgroundResource(R.drawable.krowa);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.krowa);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -431,26 +447,28 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.krowa);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                  //  try {
+                  //      Thread.sleep(1000);
+                  //  } catch (InterruptedException e){ }
+                  //  Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                  //  Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
-
 
             }
 
         }
 
         if (pic[piknumber] == 5) {
-            Ib[piknumber].setBackgroundResource(R.drawable.myszka);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.myszka);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -462,26 +480,28 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.myszka);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                  //  try {
+                  //      Thread.sleep(1000);
+                  //  } catch (InterruptedException e){ }
+                  //  Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                  //  Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
-
 
             }
 
         }
 
         if (pic[piknumber] == 6) {
-            Ib[piknumber].setBackgroundResource(R.drawable.niedzwiedz);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.niedzwiedz);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -493,11 +513,12 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.niedzwiedz);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                  //  try {
+                  //      Thread.sleep(1000);
+                  //  } catch (InterruptedException e){ }
+                  //  Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                  //  Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
 
@@ -507,12 +528,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (pic[piknumber] == 7) {
-            Ib[piknumber].setBackgroundResource(R.drawable.pajak);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.pajak);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -524,11 +547,12 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.pajak);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                  //  try {
+                  //      Thread.sleep(1000);
+                  //  } catch (InterruptedException e){ }
+                  //  Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                  //  Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
 
@@ -538,12 +562,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (pic[piknumber] == 8) {
-            Ib[piknumber].setBackgroundResource(R.drawable.piesek);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.piesek);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -555,11 +581,12 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.piesek);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                 //   try {
+                 //       Thread.sleep(1000);
+                 //   } catch (InterruptedException e){ }
+                 //   Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                 //   Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
 
@@ -569,13 +596,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (pic[piknumber] == 9) {
-            Ib[piknumber].setBackgroundResource(R.drawable.sowa);
+
 
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.sowa);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -587,11 +616,12 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.sowa);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                 //   try {
+                 //       Thread.sleep(1000);
+                 //   } catch (InterruptedException e){ }
+                 //   Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                 //   Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
                 }
 
@@ -600,12 +630,14 @@ public class MainActivity extends AppCompatActivity {
 
         }
         if (pic[piknumber] == 10) {
-            Ib[piknumber].setBackgroundResource(R.drawable.zaba);
+
             if (flagb1 == 0) {
                 flagpic =piknumber;
-
+                for (i = 0; i <= 19; i++) {
+                    Ib[i].setBackgroundResource(R.drawable.ic_launcher_background);
+                }
                 flagb1 = 1;
-
+                Ib[piknumber].setBackgroundResource(R.drawable.zaba);
             } else {
 
                 if(pic[piknumber]==pic[flagpic]){
@@ -617,12 +649,14 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     Ib[piknumber].setBackgroundResource(R.drawable.zaba);
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e){ }
-                    //Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
-                    //Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
+                    Ib[piknumber].refreshDrawableState();
+                 //      try {
+                 //      Thread.sleep(1000);
+                 //   } catch (InterruptedException e){ }
+                 //   Ib[flagpic].setBackgroundResource(R.drawable.ic_launcher_background);
+                 //   Ib[piknumber].setBackgroundResource(R.drawable.ic_launcher_background);
                     flagb1 = 0;
+
                 }
 
 
