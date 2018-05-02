@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:rowCount="6"
+        android:columnCount="4"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/Ibutton1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="0"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+       </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="0"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="0"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="0"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="1"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="1"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="1"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="1"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="2"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="2"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="2"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton12"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="2"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton13"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="3"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton14"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="3"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton15"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="3"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton16"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="3"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton17"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="0"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="4"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton18"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="4"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton19"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="2"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="4"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/Ibutton20"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_column="3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_row="4"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY" >
+        </ImageButton>
+
+    </GridLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="Rozpocznij gre!"
+    android:textAlignment="center"
+    android:id="@+id/ButtonStart">
+
+</Button>
+
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
